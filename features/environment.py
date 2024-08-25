@@ -7,3 +7,4 @@ def before_scenario(context, scenario):
 
 def after_scenario(context, scenario):
     context.driver.quit()
+

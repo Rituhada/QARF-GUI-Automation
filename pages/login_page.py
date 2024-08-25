@@ -30,11 +30,11 @@ class Login_page():
         time.sleep(2)
 
     def enter_credentials(self, username, password):
-        time.sleep(5)
+        time.sleep(10)
         self.driver.find_element(By.XPATH, self.username_xpath).send_keys(username)
         self.driver.find_element(By.XPATH, self.password_xpath).send_keys(password)
     def click_login_button(self):
-        time.sleep(5)
+        time.sleep(10)
         self.driver.find_element(By.XPATH,self.login_button_xpath).click()
     def verify_homepage(self):
         time.sleep(10)
