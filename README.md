@@ -26,7 +26,10 @@ Page Object Model is followed in this framework
 `allure serve reports/`
 
 **To run the test Cases one by one**
-`behave --tags`
+`behave --tags=TC01`
 
-**To run the all text cases**
+**Executing Behave Tests Tagged with @smoke**
+`behave --tags=@smoke   `
+
+**To run the all text cases using pytest**
 `pytest`
