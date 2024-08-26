@@ -55,12 +55,12 @@ def clicks_logout_button(context):
     context.logout_page.logout()
     time.sleep(2)
 
-@then('The user navigates again to login page')
+@then('the user navigates to login page')
 def view_login_page(context):
     time.sleep(10)
     context.login_page = Login_page(context.driver)
     # context.login_page.displayed_company_logo()
-
+    time.sleep(2)
 @then('the user should see required field validation message')
 def validate_required_message(context):
     context.login_page.required_user_message()
