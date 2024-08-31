@@ -6,5 +6,3 @@ import time
 def browser():
     driver = webdriver.Chrome()
     time.sleep(2)
-    yield driver
-    driver.quit()

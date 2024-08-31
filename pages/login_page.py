@@ -41,7 +41,6 @@ class Login_page():
         homepage_verify = self.driver.find_element(By.XPATH, self.homepage)
         assert homepage_verify.is_displayed()==True , "Dashboard button is not displayed"
         homepage=homepage_verify.text
-
     def verify_error_message(self):
         time.sleep(2)
         error_message = self.driver.find_element(By.XPATH, self.error_message_xpath)
@@ -53,22 +52,18 @@ class Login_page():
     def required_password_message(self):
         required_password_element_text = self.driver.find_element(By.XPATH, self.password_required_area2).text
         unittest.TestCase().assertTrue(required_password_element_text == "Required","Required password message does not match")
-
     def displayed_company_logo(self):
         comp_logo = self.driver.find_element(By.XPATH, self.company_logo)
         unittest.TestCase().assertTrue(comp_logo.is_displayed(), "Company logo is not displayed")
-
     def enable_forgot_password(self):
         enable_forgot = self.driver.find_element(By.XPATH, self.forgot_password)
         unittest.TestCase().assertTrue(enable_forgot.is_enabled(), "Forgot password is not enabled")
-
     def displayed_forgot_password(self):
         display_forgot = self.driver.find_element(By.XPATH, self.forgot_password)
         unittest.TestCase().assertTrue(display_forgot.is_displayed(), "Forgot password is not displayed")
     def enable_login_button(self):
         enable_lgn_btn=self.driver.find_element(By.XPATH, self.login_button_xpath)
         unittest.TestCase().assertTrue(enable_lgn_btn.is_enabled(), "Login button is not enabled")
-
     def displayed_login_button(self):
         display_lgn_btn=self.driver.find_element(By.XPATH, self.login_button_xpath)
         unittest.TestCase().assertTrue(display_lgn_btn.is_displayed(), "Login button is not displayed")
@@ -81,18 +76,15 @@ class Login_page():
     def enable_password_textbox(self):
         password_enable_box=self.driver.find_element(By.XPATH, self.password_xpath)
         unittest.TestCase().assertTrue(password_enable_box.is_enabled(), "Password textbox is not enabled")
-
     def displayed_password_textbox(self):
         password_txtbox=self.driver.find_element(By.XPATH, self.password_xpath)
         unittest.TestCase().assertTrue(password_txtbox.is_displayed(), "Password textbox is not displayed")
-
     def displayed_login_panel(self):
         login_panel=self.driver.find_element(By.XPATH, self.title_login_panel)
         unittest.TestCase().assertTrue(login_panel.is_displayed(), "Login panel is not displayed")
     def displayed_user_label(self):
         user_labl=self.driver.find_element(By.XPATH, self.label_user)
         unittest.TestCase().assertTrue(user_labl.is_displayed(), "User label is not displayed")
-
     def displayed_user_password(self):
         user_pass=self.driver.find_element(By.XPATH, self.label_password)
         unittest.TestCase().assertTrue(user_pass.is_displayed(), "User password label is not displayed")

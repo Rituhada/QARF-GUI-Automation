@@ -1,5 +1,5 @@
 reports/*.json
 .idea
-
+allure-report/*.html
 #python
 __pycache__/

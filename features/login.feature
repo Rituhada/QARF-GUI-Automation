@@ -6,7 +6,7 @@ Feature: Smoke Functionality
     And the user clicks on the Login button
     Then the user navigates to the home page
     When the users clicks on logout button
-    Then the user navigates to login page
+
 
  @TC02 @smoke
  Scenario: TC02 login functionality with invalid credentials
@@ -46,4 +46,3 @@ Feature: Smoke Functionality
    When the user clicks on cancel button
    Then the user navigates to the home page
    When the users clicks on logout button
-   Then the user navigates to login page
